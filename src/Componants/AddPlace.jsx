@@ -63,10 +63,10 @@ const Signup = () => {
   
 
   return (
+    <div className="bg-g" >
     <div className="container">
       <div className="item">
         <div className="contact">
-         
           <img
             src="https://static.saltinourhair.com/wp-content/uploads/2019/04/23104559/travel-quote-list-instagram-post.jpg"
             alt=""
@@ -105,6 +105,7 @@ const Signup = () => {
           <form style={{ padding: "0 50px" }} onSubmit={signupForm.handleSubmit}>
             <div className="input-box">
               <input
+              name="name" value={signupForm.values.name} onChange={signupForm.handleChange}
                 type="text"
                 className="input" 
                 placeholder="Name"
@@ -112,15 +113,14 @@ const Signup = () => {
               />
               <label htmlFor="" />
             </div>
-
             <label htmlFor="">Select Location</label>
-            <select className="form-control" name="location" value={signupForm.values.location} onChange={signupForm.handleChange} required>
+            <select className="form-control rounded-5" name="location" value={signupForm.values.location} onChange={signupForm.handleChange} required>
               <option value="">Select Any</option>
-              <option value="Mumbai">Mumbai</option>
-              <option value="Delhi">Delhi</option>
-              <option value="Banglore">Banglore</option>
-              <option value="Chennai">Chennai</option>
-              <option value="Kolkata">Kolkata</option>
+              <option value="Bhubhneshwar">Bhubhneshwar</option>
+              <option value="Puri">Puri</option>
+              <option value="Cuttack">Cuttack</option>
+              <option value="Jharsuguda">Jharsuguda</option>
+              <option value="Sambhalpur">Sambhalpur</option>
             </select>
            
            
@@ -135,10 +135,10 @@ const Signup = () => {
                 cols={30}
                 rows={10}
                 defaultValue={""}
-              />
+              />  
               <label htmlFor="" />
             </div>
-            <div>
+            <div  className="upload-btn fw-bold">
             <label htmlFor="">Upload File</label>
             <input type="file" onChange={uploadFile} />
             </div>
@@ -149,7 +149,8 @@ const Signup = () => {
           </form>
         </div>
       </div>
-    </div>  
+      </div>
+      </div>
   );
 };
 

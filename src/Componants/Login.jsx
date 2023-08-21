@@ -62,10 +62,11 @@ const Login = () => {
   });
 
   return (
+    <div className="bg-g">
     <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="card w-25 shadow-lg rounded-5">
         <div className="card-body p-5">
-          <h2 className="text-center my-5">Login Form</h2>
+          <h2 className="text-center my-5">Login</h2>
           <form onSubmit={loginForm.handleSubmit}>
             <label htmlFor="">Email</label>
             <p className="error-label">{loginForm.touched.email ? loginForm.errors.email : '' }</p>
@@ -80,6 +81,7 @@ const Login = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -67,12 +67,12 @@ const Signup = () => {
     <div className="container">
       <div className="item">
         <div className="contact">
-         
           <img
-            src="https://static.saltinourhair.com/wp-content/uploads/2019/04/23104559/travel-quote-list-instagram-post.jpg"
+            src="https://htmlburger.com/blog/wp-content/uploads/2022/04/Contact-US-Page-Example-Sennep-Digital-Agency-Developers-and-Designers-Human-Touch-Contact-Animation.gif"
             alt=""
             className="image"
           />
+
           <div className="social links">
             <span className="secnd text p-2 fw-bold" style={{ fontSize: "large" }}>
               Social Network :

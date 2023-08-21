@@ -40,37 +40,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <img src="" alt="Navbar Logo" />
-      <div className="container-fluid">
-        
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
+    <nav class="bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg">
+      <h1 className="text-warning display-8">Orrisa<span>Tourisam</span></h1>
+
+      
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink className="nav-link" to="/home">
                 Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/location">
-                Add Location
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/viewlocation">
-                View Location
               </NavLink>
             </li>
             <li className="nav-item">
@@ -88,6 +67,11 @@ const Navbar = () => {
                 Contact Us
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/manageuser">
+             Delete Place
+              </NavLink>
+            </li>
 
           
 
@@ -101,7 +85,7 @@ const Navbar = () => {
 
           </ul>
         </div>
-      </div>
+     
     </nav>
     </nav>
   );

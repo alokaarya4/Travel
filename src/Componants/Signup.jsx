@@ -63,11 +63,12 @@ const Signup = () => {
   };
 
   return (
+    <div className="bg-g">
     <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="card w-25 shadow-lg rounded-5">
         <div className="card-body p-5">
           
-          <h2 className="text-center my-5">Signup Form</h2>
+          <h2 className="text-center my-5">Signup</h2>
           <form onSubmit={signupForm.handleSubmit}>
             <label htmlFor="">Name</label>
             <input className="form-control mb-4 rounded-5" type="text" name="name" onChange={signupForm.handleChange} value={signupForm.values.name} />
@@ -84,6 +85,7 @@ const Signup = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 };
